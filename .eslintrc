@@ -1,0 +1,21 @@
+{
+  "env": {
+    "node": true,
+    "jest": true,
+    "es2020": true
+  },
+  "extends": [
+    "plugin:prettier/recommended"
+  ],
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "rules": {
+    "no-console": ["error"],
+    "no-debugger": ["error"],
+    "linebreak-style": ["error", "unix"],
+    "semi": ["error", "always"],
+    "no-unused-vars": ["error"],
+    "no-prototype-builtins": "off"
+  }
+}
