@@ -4,12 +4,7 @@
   "description": "a simple middleware for aws lambda",
   "main": "src/index.js",
   "types": "src/index.d.ts",
-  "files": [
-    "LICENSE",
-    "README.md",
-    "src/index.js",
-    "src/index.d.ts"
-  ],
+  "files": ["LICENSE", "README.md", "src/index.js", "src/index.d.ts"],
   "scripts": {
     "test": "NO_LOG=true jest --silent --runInBand --coverage",
     "test:coverage:open": "open coverage/lcov-report/index.html",
@@ -18,18 +13,13 @@
     "format": "prettier --write --check 'src/**/*.js' 'src/**/*.test.js'",
     "check": "tsc",
     "ci:local": "npm run test && npm run lint",
-    "pre-commit": "echo '\n=> running linter...' && npm run lint && echo '\n=> running prettier...' && npm run format && echo '\n=> running tests...' && npm run test"
+    "pre-commit": "echo '\n=> running linter...' && npm run lint && echo '\n=> running prettier...' && npm run format && echo '\n=> running tests...' && npm run test && echo '\n=> running audit...' && npm audit --fix"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/joaquimserafim/lambda-midd.git"
   },
-  "keywords": [
-    "serverless",
-    "aws",
-    "lambda",
-    "middleware"
-  ],
+  "keywords": ["serverless", "aws", "lambda", "middleware"],
   "author": "@JoaquimSerafim",
   "license": "ISC",
   "bugs": {
